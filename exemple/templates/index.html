@@ -1,43 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oauth42</title>
-    <style>
-        /* Here */
-        body { margin: 0; padding: 0; background-color: rgb(150, 150, 233);}
-        .container {
-            margin: 0;
-        }
-        .box {
-            margin-top: 200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        button {
-            margin: auto auto;
-            cursor: pointer;
-            padding: 10px 20px;
-            background-color: rgb(68, 68, 238);
-            color: aliceblue;
-            border: 1px solid black;
-            box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.75);
-        }
-        button:hover {
-            background-color: rgb(43, 43, 215);
-        }
-    </style>
-</head>
+{% extends 'base.html' %}
+{% block title %}Oauth42{% endblock%}
 
-<body>
-    <section class="container">
-        <div class="box">
-            <a href="{{ url }}">
-                <button>Login with 42</button>
-            </a>
-        </div>
-    </section>
-</body>
-</html>
+{% block content %}
+<div class="box">
+    <a href="{{ url }}">
+        <button>Login with 42</button>
+    </a>
+</div>
+{% endblock %}

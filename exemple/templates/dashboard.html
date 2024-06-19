@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{%block title%} Dashboard {%endblock%}
+
+{% block content %}
+    <div class="box">
+        <img
+            src="{{context.image}}"
+            alt="profile-picture"
+            width="200px"
+            height="200px"
+        >
+        <h1>{{context.name}}</h1>
+        <p>{{context.email}}</p>
+    </div>
+    <p class="block">{{context.data}}</p>
+{% endblock %}
